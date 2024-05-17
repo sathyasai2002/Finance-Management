@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0-release-24177-07" />
+    <PackageReference Include="NUnit" Version="3.13.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinanceManagement\FinanceManagement.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FinanceManagement">
+      <HintPath>..\FinanceManagement\bin\Debug\net6.0\FinanceManagement.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
